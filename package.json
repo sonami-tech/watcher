@@ -18,7 +18,6 @@
     "typeorm:migrate": "npm run typeorm migration:run -- -d config/dataSource.ts",
     "typeorm": "NODE_OPTIONS='--import tsx' typeorm",
     "build": "rollup --config ./rollup.config.ts --configPlugin @rollup/plugin-typescript",
-    "release": "npm run build && pkg ./out/index.cjs --targets host --out-path bin",
     "version": "npx changeset version && npx changeset add --empty && npm i",
     "postinstall": "patch-package"
   },
@@ -63,7 +62,6 @@
     "madge": "^5.0.1",
     "mocha": "^9.2.2",
     "nock": "^13.5.4",
-    "pkg": "^5.8.1",
     "prettier": "^2.7.1",
     "rollup": "^3.21.6",
     "rollup-plugin-natives": "^0.7.6",
